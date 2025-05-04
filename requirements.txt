@@ -1,0 +1,26 @@
+# Core dependencies
+torch>=2.0.0
+numpy>=1.24.0
+soundfile>=0.12.0
+scipy>=1.11.0
+
+# Primary implementation - Coqui TTS
+TTS>=0.21.1
+
+# Fallback implementation - SpeechT5
+transformers>=4.34.0
+datasets>=2.14.0
+
+# Gradio interface
+gradio>=4.0.0
+
+# Audio processing (removed librosa as it was causing issues)
+# audiomentations>=0.32.0 (optional - currently not used)
+
+# Additional dependencies for improved voice similarity
+pathlib
+
+# For GPU acceleration (optional - install based on your CUDA version)
+# torch==2.1.0+cu121 --index-url https://download.pytorch.org/whl/cu121
+# For specific PyTorch versions with CUDA support, uncomment:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
